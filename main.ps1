@@ -26,8 +26,9 @@ if (-Not (Test-Path $extractedFolder)) {
 $env
 & "$PSScriptRoot\cmdline-tools\bin\sdkmanager.bat" --sdk_root=.
 & "$PSScriptRoot\cmdline-tools\bin\sdkmanager.bat" --sdk_root=. --install "platform-tools"
+& "$PSScriptRoot\cmdline-tools\bin\sdkmanager.bat" --sdk_root=. --install "build-tools;32.0.0"
 & "$PSScriptRoot\cmdline-tools\bin\sdkmanager.bat" --sdk_root=. --install "platforms;android-32"
-& "$PSScriptRoot\cmdline-tools\bin\sdkmanager.bat" --sdk_root=. --install "system-images;android-32;google_apis_playstore;x86_64"
+& "$PSScriptRoot\cmdline-tools\bin\sdkmanager.bat" --sdk_root=. --install "system-images;android-32;google_apis;x86_64"
 & echo "no" | & "$PSScriptRoot\cmdline-tools\bin\avdmanager.bat" create avd -n emu -k "system-images;android-32;google_apis_playstore;x86_64"
 
 
