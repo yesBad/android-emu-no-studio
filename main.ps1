@@ -38,8 +38,10 @@ $iniFilePath = "$PSScriptRoot\emu.avd\config.ini"
 $replacementLines = @(
     "image.sysdir.1=$PSScriptRoot\system-images\android-32\google_apis_playstore\x86_64\",
     "PlayStore.enabled=yes",
-    "hw.lcd.height=1920",
-    "hw.lcd.width=1080"
+    "hw.lcd.height=1280",
+    "hw.lcd.width=720",
+    "hw.keyboard=yes",
+    "hw.gpu.enabled=yes"
 )
 
 # Read the content of the .ini file
