@@ -42,7 +42,10 @@ $replacementLines = @(
     "hw.lcd.height=1280",
     "hw.lcd.width=720",
     "hw.keyboard=yes",
-    "hw.gpu.enabled=yes"
+    "hw.gpu.enabled=yes",
+    "hw.gpu.mode=guest",
+    "hw.ramSize=4128M",
+    "disk.cachePartition.size=512MB"
 )
 
 # Read the content of the .ini file
